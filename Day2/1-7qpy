@@ -1,0 +1,8 @@
+def print_inverted_pyramid(height):
+    for i in range(height, 0, -1):  
+        spaces = ' ' * (height - i)  
+        stars = '*' * (2 * i - 1)  
+        print(spaces + stars + spaces)  
+
+height = 5
+print_inverted_pyramid(height)
